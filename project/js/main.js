@@ -7,6 +7,10 @@ function createCard(arr) {
         <h4> ${obj.caption}</h4>
         </div>
         `
-    
+        
     });
 }
+fetch("https://swapi.dev/")
+    .then((SWA) => {
+        createCard(SWA);
+    })
