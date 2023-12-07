@@ -14,3 +14,8 @@ fetch("https://swapi.dev/")
     .then((SWA) => {
         createCard(SWA);
     })
+async function getData(){
+    let res = await.fetch(
+        "httpsmcdonald-s-products-api.p.rapidapi.com"
+    )
+}
