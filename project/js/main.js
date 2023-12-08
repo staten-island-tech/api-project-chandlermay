@@ -10,12 +10,15 @@ function createCard(arr) {
         
     });
 }
-fetch("https://swapi.dev/")
-    .then((SWA) => {
-        createCard(SWA);
-    })
+fetch("https://swapi.dev/api")
+    .then((response) => {
+if (!response.ok) {
+    throw
+}
+
+
 async function getData(){
     let res = await.fetch(
-        "httpsmcdonald-s-products-api.p.rapidapi.com"
+        ""
     )
 }
