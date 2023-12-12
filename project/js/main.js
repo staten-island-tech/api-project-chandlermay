@@ -1,24 +1,18 @@
-function createCard(arr) {
-    arr.forEach(obj => {
-        const card =`
-        <div class ="card"
-        <h3> ${obj.name} </h3>
-        <img src="${obj.image}" class="image">
-        <h4> ${obj.caption}</h4>
-        </div>
-        `
-        
-    });
-}
-fetch("https://swapi.dev/api")
-    .then((response) => {
-if (!response.ok) {
-    throw
-}
+const apiURL ="http https://swapi.dev/api/starships/9/"
 
+console.log(fetch(apiURL));
+fetch(apiURL)
+.then((response) => response.json())
+.then((data) => console.log(data));
 
-async function getData(){
-    let res = await.fetch(
-        ""
-    )
+async function getData(x) {
+try {
+    const response = await fetch(x);
+    const data = await response.json();
+    console.log(data);
+    return data;
+} catch (error) {
+    console.log(error);
 }
+}
+getData(apiURL);
