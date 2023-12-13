@@ -1,18 +1,24 @@
-const apiURL = "http https://swapi.dev/api/starships/9/"
+const apiURL = "https://swapi.dev/api"
 
-async function getData(x) {
+async function getData(url) {
     try {
-        const response = await fetch(x);
-        response.then((result) => {
-            async function deeperData() {
-                await fetch(result);
-            };
-            deeperData();
-        });
-        const deepestData = await response.json();
-        console.log(deepestData);
+        const response = await fetch(url);
+        const data = response.json();
+        console.log(data);
     } catch (error) {
         console.log(error);
     }
-}
+};
 getData(apiURL);
+
+Data.forEach(result => {
+    async function getdeepData(x) {
+        try {
+            const response = await fetch(x);
+            const data = response.json();
+            console.log(data);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+});
