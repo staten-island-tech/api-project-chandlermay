@@ -1,6 +1,7 @@
+import { DOMselectors } from "./doms";
 const apiURL = "https://swapi.dev/api"
 
-async function getData(url) {
+/* async function getData(url) {
     try {
         const response = await fetch(url);
         const data = response.json();
@@ -9,16 +10,6 @@ async function getData(url) {
         console.log(error);
     }
 };
-getData(apiURL);
+getData(apiURL); */
 
-Data.forEach(result => {
-    async function getdeepData(x) {
-        try {
-            const response = await fetch(x);
-            const data = response.json();
-            console.log(data);
-        } catch (error) {
-            console.log(error);
-        }
-    };
-});
+console.log(DOMselectors.test); 
