@@ -1,5 +1,7 @@
-/* import { DOMselectors } from "./doms";
-const apiURL = "https://swapi.dev/api"
+import "../style/style.css";
+import { DOMselectors } from "./doms";
+
+const apiURL = "https://valorant-api.com/v1/weapons"
 
 async function getData(url) {
     try {
@@ -9,7 +11,7 @@ async function getData(url) {
     } catch (error) {
         console.log(error);
     }
-};
+}
 getData(apiURL);
 
-console.log(DOMselectors.test);  */
+console.log("hello world");
