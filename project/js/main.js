@@ -1,8 +1,6 @@
 import "../style/style.css";
 import { DOMselectors } from "./doms";
 
-const apiURL = "https://valorant-api.com/v1/"
-
 async function getData(url) {
     try {
         const response = await fetch(url);
@@ -15,7 +13,9 @@ async function getData(url) {
 
 DOMselectors.btn.forEach((button) => button.addEventListener("click", function(){
     let category = button.textContent.toLowerCase
-    let newURL = apiURL + category
+    let category2 = category.toString
+    let baseURL = "https://valorant-api.com/v1/"
+    let newURL = baseURL.concact(category2);
     getData(newURL);
 }))
 
@@ -24,3 +24,6 @@ let y = DOMselectors.BUTTON.textContent.toLowerCase.toString
 let newestURL = x + y
 console.log(newestURL);
  */
+    DOMselectors.agentbutton.addEventListener("click" , function(){
+getData("https://valorant-api.com/v1/agents");
+    })
