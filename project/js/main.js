@@ -10,20 +10,13 @@ async function getData(url) {
         console.log(error);
     }
 }
-
-    DOMselectors.agentbutton.addEventListener("click" , function(){
-getData("https://valorant-api.com/v1/agents");
-    });
-    DOMselectors.weaponsbutton.addEventListener("click" , function(){
-getData("https://valorant-api.com/v1/weapons");
-    });
-    DOMselectors.mapsbutton.addEventListener("click" , function(){
-getData("https://valorant-api.com/v1/maps");
-    });
-    DOMselectors.currencybutton.addEventListener("click" , function(){
-getData("https://valorant-api.com/v1/currencies");
-    });
-
 function filters() {
-    domselectors.button.forEach(btn)
+    DOMselectors.button.forEach((btn) => btn.addEventListener("click", function () {
+        const baseURL = "https://valorant-api.com/v1/"
+        let category = btn.textContent.toLowerCase()
+        let newURL = baseURL + category
+        getData(newURL);
+    })
+    )
 }
+filters();

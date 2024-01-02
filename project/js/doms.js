@@ -1,11 +1,9 @@
 const DOMselectors = {
-    btn: document.querySelectorAll(".btn"),
-    test: document.querySelector(".test"),
-    BUTTON: document.querySelector(".BUTTON"),
+    button: document.querySelectorAll(".button"),
     agentbutton: document.querySelector("#agentbutton"),
     weaponsbutton: document.querySelector("#weaponsbutton"),
     mapsbutton: document.querySelector("#mapsbutton"),
-    currencybutton: document.querySelector("#currencybutton")
+    currenciesbutton: document.querySelector("#currenciesbutton")
 }
 
 export {DOMselectors}; 
