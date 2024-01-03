@@ -1,11 +1,13 @@
 import "../style/style.css";
 import { DOMselectors } from "./doms";
+import { createCard } from "./create";
 
 async function getData(url) {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data.data);
+        // console.log(data.data);
+        createCard(data.data);
     } catch (error) {
         console.log(error);
     }
