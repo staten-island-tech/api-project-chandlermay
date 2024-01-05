@@ -12,6 +12,7 @@ async function getData(url) {
         console.log(error);
     }
 }
+
 function filters() {
     DOMselectors.button.forEach((btn) => btn.addEventListener("click", function () {
         const baseURL = "https://valorant-api.com/v1/"

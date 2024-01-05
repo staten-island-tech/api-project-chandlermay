@@ -8,6 +8,7 @@ const DOMselectors = {
     levelborderbutton: document.querySelector("#levelborderbutton"),
     bundlesbutton: document.querySelector("#bundlesbutton"),
     container: document.querySelector("#container"),
+    desknav: document.querySelector(".desk-nav"),
 }
 
 export {DOMselectors}; 

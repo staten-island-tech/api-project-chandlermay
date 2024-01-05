@@ -1,4 +1,5 @@
 import { DOMselectors } from "./doms";
+import "../style/style.css";
 function createCard(arr) {
     arr.forEach((obj) => {
       const card = `
