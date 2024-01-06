@@ -1,30 +1,29 @@
 html {
-    background: #182544;
+    font-family: "FF Mark W05",Arial,sans-serif;
+    background-color: #ffffff;
 }
 
 :root {
     --middleblue: #0090ff;
     --lightblue: #40c9ff;
     --pink: #e81cff;
+    --orange: #f73414;
+    --gray: #1e2e34;
 }
 
-.desk-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    margin: 1rem auto;
+.header {
+ text-align: center;
+ color: var(--gray);
+ font-size: 3rem;
 }
 
 .card {
     width: 24rem;
     height: 24rem;
     border-radius: 30px;
-    background: #000000;
+    color: #f73414;
     box-shadow: 15px 15px 30px var(--pink),
         -15px -15px 30px var(--lightblue);
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,8 +38,8 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 7rem;
     background: var(--primary);
+    padding-top: 3rem;
 }
 
 .card {
@@ -55,5 +54,5 @@ html {
     color: var(--third);
     margin-left: 5rem;
     margin-right: 5rem;
-    color: #ffffff;
+    color: #000000;
 }

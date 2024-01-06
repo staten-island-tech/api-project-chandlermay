@@ -6,13 +6,19 @@ async function getData(url) {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        createCard(data.data);
+        console.log(data.data);
     } catch (error) {
         console.log(error);
     }
 }
 
-getData("https://valorant-api.com/v1/agents");
+fetch('https://valorant-api.com/v1/agents')
+  .then(response => response.json())
+  .then(data => {
+    const playableAgents = data.data.filter(agent => agent.isPlayableCharacter);
+    createCard(playableAgents);
+});
+
 
 /* function filters() {
     DOMselectors.button.forEach((btn) => btn.addEventListener("click", function () {
