@@ -64,6 +64,8 @@ html {
     max-width: 0.000001rem;
     max-height: 0.00001rem;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     opacity: 0;
 }
 
@@ -73,8 +75,11 @@ html {
     max-height: 1000rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
     transition: 0.3s;
     position: absolute;
+    overflow: hidden;
+    font-size: 1rem;
 }
 
 .spanImage {
@@ -82,7 +87,12 @@ html {
     max-height: 2.8rem;
 }
 
+.spanText {
+    font-size: 1rem;
+}
+
 .spancontainer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
