@@ -1,5 +1,5 @@
 html {
-    font-family: "FF Mark W05",Arial,sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #ffffff;
 }
 
@@ -12,24 +12,13 @@ html {
 }
 
 .header {
- text-align: center;
- color: var(--gray);
- font-size: 3rem;
+    text-align: center;
+    color: var(--gray);
+    font-size: 3rem;
+
 }
 
-.card {
-    width: 24rem;
-    height: 24rem;
-    border-radius: 30px;
-    color: #f73414;
-    box-shadow: 15px 15px 30px var(--pink),
-        -15px -15px 30px var(--lightblue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image{
+.image {
     max-width: 8rem;
     max-height: 8rem;
 }
@@ -37,22 +26,63 @@ html {
 #container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background: var(--primary);
-    padding-top: 3rem;
+    justify-content: space-around;
 }
 
 .card {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 90px;
+    background-color: var(--gray);
+    color: var(--orange);
+    box-shadow: 1rem 1rem 2rem var(--pink),
+        -1rem -1rem 2rem var(--lightblue);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20rem;
-    height: 20rem;
-    background-color: var(--fifth);
-    border-radius: 20%;
-    margin-bottom: 5rem;
-    color: var(--third);
-    margin-left: 5rem;
-    margin-right: 5rem;
-    color: #000000;
+    margin-top: 5rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card:hover {
+    background-color: var(--orange);
+    color: var(--gray);
+}
+
+.card:hover>div {
+    opacity: 0%;
+}
+
+.card:hover>p {
+    top: 0;
+    font-size: 2rem;
+}
+
+.card span {
+    position: relative;
+    max-width: 0.000001rem;
+    max-height: 0.00001rem;
+    display: flex;
+    opacity: 0;
+}
+
+.card:hover span {
+    opacity: 100%;
+    max-width: 100rem;
+    max-height: 1000rem;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.spanImage {
+    max-width: 2.8rem;
+    max-height: 2.8rem;
+}
+
+.spancontainer {
+    display: flex;
+    flex-wrap: wrap;
 }
