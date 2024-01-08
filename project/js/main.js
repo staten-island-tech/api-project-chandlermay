@@ -19,7 +19,7 @@ fetch('https://valorant-api.com/v1/agents')
     createCard(playableAgents);
 });
 
-
+DOMselectors.button.forEach.addEventlistener("click")
 /* function filters() {
     DOMselectors.button.forEach((btn) => btn.addEventListener("click", function () {
         const baseURL = ""
