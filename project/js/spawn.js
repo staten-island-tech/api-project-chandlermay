@@ -9,6 +9,7 @@ function spawnCard(data) {
         };
         if (obj.displayName === "The Range") {
             obj.displayIcon = "../img/range.webp"
+            obj.narrativeDescription = "It's just the range. Chill out here!"
         };
         const card = `
     <div class="card">
