@@ -4,6 +4,7 @@ const DOMselectors = {
     mapsbutton: document.querySelector("#mapsbutton"),
     container: document.querySelector("#container"),
     desknav: document.querySelector(".desk-nav"),
+    background: document.querySelector("#background")
 }
 
 export {DOMselectors}; 
