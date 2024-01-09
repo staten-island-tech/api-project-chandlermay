@@ -26,7 +26,7 @@ async function getMapData(url) {
 
 function clearScreen() {
     DOMselectors.container.innerHTML = "";
-    DOMselectors.background.innerHTML = "";
+    DOMselectors.backgroundcontainer.innerHTML = "";
 };
 
 DOMselectors.agentbutton.addEventListener("click", function(){
